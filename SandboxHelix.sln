@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{E2B9DC36-E7F8-4F73-9F45-CA392C08D8AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{DDCABDFF-7F66-4182-BA25-1A18CE61174E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{63006B1B-806C-4E9D-8A69-B5C9D646FD8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{8B3946D7-7A93-4B79-8A59-A7BC6C96AE6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{F3238C2E-C0AE-4494-ABE7-7DDAC58A8B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Article", "Article", "{A897ADCA-5DE1-416A-8927-6C3EDFD1E0BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Project.Website", "src\Project\Website\code\SandboxHelix.Project.Website.csproj", "{02DC2B7B-F9FA-4B36-B94A-614799E08553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Foundation.Serialization", "src\Foundation\Serialization\code\SandboxHelix.Foundation.Serialization.csproj", "{6EA738BD-2CCE-4180-96A7-013CCA0000EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{3050B889-530F-4DAA-859B-E337DAD123EA}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+		publishsettings.targets = publishsettings.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Feature.Article", "src\Feature\Article\code\SandboxHelix.Feature.Article.csproj", "{B7672FAA-AA1D-48C4-A03E-D07FC4598A6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SitecoreExtensions", "SitecoreExtensions", "{42595626-2314-44E3-8F1A-C2EECB769B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Foundation.SitecoreExtensions", "src\Foundation\SitecoreExtensions\code\SandboxHelix.Foundation.SitecoreExtensions.csproj", "{FCF3F6DF-7BF3-493C-9561-73F07928C862}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Styling", "Styling", "{5C97DF57-6271-4D07-8A78-035C278D3E02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Foundation.Styling", "src\Foundation\Styling\code\SandboxHelix.Foundation.Styling.csproj", "{21D3AA87-609E-4B02-BA42-D864F452415B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Media", "Media", "{519C3608-A665-48FD-BA56-32396B7FA09F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Feature.Media", "src\Feature\Media\code\SandboxHelix.Feature.Media.csproj", "{FE67F804-0D3E-4C32-8AD4-C6A9C3AACB67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02DC2B7B-F9FA-4B36-B94A-614799E08553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DC2B7B-F9FA-4B36-B94A-614799E08553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DC2B7B-F9FA-4B36-B94A-614799E08553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DC2B7B-F9FA-4B36-B94A-614799E08553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA738BD-2CCE-4180-96A7-013CCA0000EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA738BD-2CCE-4180-96A7-013CCA0000EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA738BD-2CCE-4180-96A7-013CCA0000EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA738BD-2CCE-4180-96A7-013CCA0000EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7672FAA-AA1D-48C4-A03E-D07FC4598A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7672FAA-AA1D-48C4-A03E-D07FC4598A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7672FAA-AA1D-48C4-A03E-D07FC4598A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7672FAA-AA1D-48C4-A03E-D07FC4598A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF3F6DF-7BF3-493C-9561-73F07928C862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF3F6DF-7BF3-493C-9561-73F07928C862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF3F6DF-7BF3-493C-9561-73F07928C862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF3F6DF-7BF3-493C-9561-73F07928C862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D3AA87-609E-4B02-BA42-D864F452415B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D3AA87-609E-4B02-BA42-D864F452415B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D3AA87-609E-4B02-BA42-D864F452415B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D3AA87-609E-4B02-BA42-D864F452415B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE67F804-0D3E-4C32-8AD4-C6A9C3AACB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE67F804-0D3E-4C32-8AD4-C6A9C3AACB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE67F804-0D3E-4C32-8AD4-C6A9C3AACB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE67F804-0D3E-4C32-8AD4-C6A9C3AACB67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B3946D7-7A93-4B79-8A59-A7BC6C96AE6D} = {63006B1B-806C-4E9D-8A69-B5C9D646FD8C}
+		{F3238C2E-C0AE-4494-ABE7-7DDAC58A8B18} = {DDCABDFF-7F66-4182-BA25-1A18CE61174E}
+		{A897ADCA-5DE1-416A-8927-6C3EDFD1E0BA} = {E2B9DC36-E7F8-4F73-9F45-CA392C08D8AF}
+		{02DC2B7B-F9FA-4B36-B94A-614799E08553} = {8B3946D7-7A93-4B79-8A59-A7BC6C96AE6D}
+		{6EA738BD-2CCE-4180-96A7-013CCA0000EF} = {F3238C2E-C0AE-4494-ABE7-7DDAC58A8B18}
+		{B7672FAA-AA1D-48C4-A03E-D07FC4598A6C} = {A897ADCA-5DE1-416A-8927-6C3EDFD1E0BA}
+		{42595626-2314-44E3-8F1A-C2EECB769B51} = {DDCABDFF-7F66-4182-BA25-1A18CE61174E}
+		{FCF3F6DF-7BF3-493C-9561-73F07928C862} = {42595626-2314-44E3-8F1A-C2EECB769B51}
+		{5C97DF57-6271-4D07-8A78-035C278D3E02} = {DDCABDFF-7F66-4182-BA25-1A18CE61174E}
+		{21D3AA87-609E-4B02-BA42-D864F452415B} = {5C97DF57-6271-4D07-8A78-035C278D3E02}
+		{519C3608-A665-48FD-BA56-32396B7FA09F} = {E2B9DC36-E7F8-4F73-9F45-CA392C08D8AF}
+		{FE67F804-0D3E-4C32-8AD4-C6A9C3AACB67} = {519C3608-A665-48FD-BA56-32396B7FA09F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD47BF71-7864-4CD1-AF85-0040C04FA8A4}
+	EndGlobalSection
+EndGlobal
