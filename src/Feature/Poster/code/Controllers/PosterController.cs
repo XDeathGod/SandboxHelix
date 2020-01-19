@@ -34,7 +34,7 @@ namespace SandboxHelix.Feature.Poster.Controllers
                     viewModel.Title = blogContent.Title;
                     viewModel.Body = blogContent.Body;
 
-                    var comments = _commentService.GetComments(blogContent.Id);
+                    var comments = _commentService.GetComments(blogContent.Id.ToString());
 
                     if(comments != null)
                     {

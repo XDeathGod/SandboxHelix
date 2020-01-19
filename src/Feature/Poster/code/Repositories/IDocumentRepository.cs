@@ -1,4 +1,5 @@
-﻿using Sitecore.Data.Items;
+﻿using SandboxHelix.Feature.Poster.Models;
+using Sitecore.Data.Items;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace SandboxHelix.Feature.Poster.Repositories
 { 
     public interface IDocumentRepository
     {
-        Item GetArticleContent(string contentGuid);
+        IDocument GetArticleContent(string contentGuid);
     }
 }

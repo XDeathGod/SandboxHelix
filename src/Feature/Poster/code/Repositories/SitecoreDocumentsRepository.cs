@@ -1,4 +1,6 @@
-﻿using Sitecore;
+﻿using Glass.Mapper.Sc;
+using SandboxHelix.Feature.Poster.Models;
+using Sitecore;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
@@ -11,18 +13,18 @@ namespace SandboxHelix.Feature.Poster.Repositories
 {
     public class SitecoreDocumentsRepository : IDocumentRepository
     {
-        private Database _database;
+        private ISitecoreContext _sitecorecontext;
 
         public SitecoreDocumentsRepository()
         {
-            _database = Context.Database;
+            _sitecorecontext = new SitecoreContext();
         }
 
-        public Item GetArticleContent(string contentGuid)
+        public IDocument GetArticleContent(string contentGuid)
         {
             Assert.ArgumentNotNullOrEmpty(contentGuid, "contentGuid");
 
-            return _database.GetItem(new ID(contentGuid));
+            return _sitecorecontext.GetItem<IDocument>(Guid.Parse(contentGuid));
         }
     }
 }

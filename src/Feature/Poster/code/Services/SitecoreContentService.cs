@@ -17,19 +17,8 @@ namespace SandboxHelix.Feature.Poster.Services
         }
         public IDocument GetDocumentContent(string contentGuid)
         {
-             SandboxHelix.Feature.Poster.Models.Document document = null;
 
-            var item = _repository.GetArticleContent(contentGuid);
-
-            if(item != null)
-            {
-                document = new  Models.Document();
-                document.Id = item.ID.ToString();
-                document.Title = item.Fields["Title"]?.Value;
-                document.Body = item.Fields["Body"]?.Value;
-            }
-
-            return document;
+            return _repository.GetArticleContent(contentGuid);
 
         }
     }

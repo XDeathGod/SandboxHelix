@@ -8,7 +8,7 @@ namespace SandboxHelix.Feature.Poster.Models
 {
    public interface IDocument
     {
-        string Id { get; }
+        Guid Id { get; }
         string Title { get; }
         string Body { get; }
     }
