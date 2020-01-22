@@ -14,7 +14,7 @@ using Glass.Mapper.Sc.Pipelines.GetChromeData;
 using Sitecore.Pipelines;
 using System.Linq;
 
-namespace SandboxHelix.Feature.Poster.App_Start
+namespace SandboxHelix.Foundation.Orm.App_Start
 {
 	public class GlassMapperSc : Glass.Mapper.Sc.Pipelines.Initialize.GlassMapperSc
 	{

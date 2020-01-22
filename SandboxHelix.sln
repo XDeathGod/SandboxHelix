@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Feature.Docume
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Feature.Poster", "src\Feature\Poster\code\SandboxHelix.Feature.Poster.csproj", "{BFADDE4F-A5FC-4817-84AE-7BDFECFC2A3A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orm", "Orm", "{72E759DA-7F23-4C44-9025-A1B01F28D74D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxHelix.Foundation.Orm", "src\Foundation\Orm\code\SandboxHelix.Foundation.Orm.csproj", "{74CA82F5-2A8C-42B6-AF7C-9223132C388B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,10 @@ Global
 		{BFADDE4F-A5FC-4817-84AE-7BDFECFC2A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFADDE4F-A5FC-4817-84AE-7BDFECFC2A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFADDE4F-A5FC-4817-84AE-7BDFECFC2A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CA82F5-2A8C-42B6-AF7C-9223132C388B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CA82F5-2A8C-42B6-AF7C-9223132C388B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CA82F5-2A8C-42B6-AF7C-9223132C388B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CA82F5-2A8C-42B6-AF7C-9223132C388B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +113,8 @@ Global
 		{A565D593-D11C-4755-B146-42AA3C2F483D} = {E2B9DC36-E7F8-4F73-9F45-CA392C08D8AF}
 		{CD4F1768-B26E-4206-8BD7-C01FDD4EC1C5} = {A565D593-D11C-4755-B146-42AA3C2F483D}
 		{BFADDE4F-A5FC-4817-84AE-7BDFECFC2A3A} = {E2B9DC36-E7F8-4F73-9F45-CA392C08D8AF}
+		{72E759DA-7F23-4C44-9025-A1B01F28D74D} = {DDCABDFF-7F66-4182-BA25-1A18CE61174E}
+		{74CA82F5-2A8C-42B6-AF7C-9223132C388B} = {72E759DA-7F23-4C44-9025-A1B01F28D74D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD47BF71-7864-4CD1-AF85-0040C04FA8A4}

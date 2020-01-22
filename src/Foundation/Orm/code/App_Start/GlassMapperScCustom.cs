@@ -3,10 +3,13 @@ using Glass.Mapper.Configuration;
 using Glass.Mapper.IoC;
 using Glass.Mapper.Maps;
 using Glass.Mapper.Sc.IoC;
-using SandboxHelix.Feature.Poster.Models.Configuration;
+using System;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
-namespace SandboxHelix.Feature.Poster.App_Start
+namespace SandboxHelix.Foundation.Orm.App_Start
 {
     public static  class GlassMapperScCustom
     {
@@ -48,8 +51,37 @@ namespace SandboxHelix.Feature.Poster.App_Start
 		}
 		public static void AddMaps(IConfigFactory<IGlassMap> mapsConfigFactory)
         {
-			// Add maps here
-             mapsConfigFactory.Add(() => new IDocumentMap());
+            // Add maps here
+            // mapsConfigFactory.Add(() => new SeoMap());
+
+            string binPath = System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "bin");
+
+            foreach (string dll in Directory.GetFiles(binPath, "SandboxHelix*.dll",SearchOption.AllDirectories))
+            {
+                try
+                {
+                    Assembly loadedAssembly = Assembly.LoadFile(dll);
+
+                    Type glassmapType = typeof(IGlassMap);
+
+                    var maps = loadedAssembly.GetTypes().Where(x => glassmapType.IsAssignableFrom(x));
+
+                    if (maps!= null)
+                    {
+                        foreach (var map in maps)
+                        {
+                            mapsConfigFactory.Add(() => Activator.CreateInstance(map) as IGlassMap);
+                        }
+                    }
+                }
+                catch (FileLoadException loadex)
+                {
+
+                    throw;
+                }
+            }
+
+
         }
     }
 }
