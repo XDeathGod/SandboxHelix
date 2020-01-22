@@ -5,14 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SandboxHelix.Feature.Poster.Models
+namespace SandboxHelix.Foundation.Repository.Content
 {
-   public interface IDocument : ICmsEntity
+    public interface IContentRepository
     {
-        Guid Id { get; }
-        string Title { get; }
-        string Body { get; }
+        T GetContentItem<T>(string contentGuid) where T : class, ICmsEntity;
     }
-
-
 }
